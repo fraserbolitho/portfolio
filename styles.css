@@ -70,22 +70,63 @@ nav {
     display: flex;
 }
 
-img {
+#textcontain img {
     max-width: 40%;
     min-width: 250px;
     border-radius: 10%;
     align-self: start;
-}
-
-#textcontain {
-    max-width: 50%;
-    padding-left: 15px;
+    float: left;
+    margin-right: 15px;
+    margin-top: 15px;
 }
 
 #textcontain h2 {
+    margin-top: 15px;
     margin-bottom: 5px;
 }
 
 #textcontain p {
     margin-top: 5px;
+}
+
+#technologies {
+    font-size: 30px;
+}
+
+
+@media screen and (max-width: 500px) {
+    #textcontain img {
+        max-width: 100%;
+        float: none;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        flex-flow: column;
+    }
+
+    nav {
+        margin: auto;
+        margin-left: 0;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+}
+
+#skills img {
+    max-width: 35px;
+
+}
+
+footer {
+    border-top: 2px solid #000000;
 }
